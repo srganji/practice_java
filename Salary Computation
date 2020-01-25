@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n,hra,da;
+    double g;
+    scanf("%d",&n);
+    if(n<15000)
+    {
+        hra=(n*15)/100;
+        da=(n*90)/100;
+        g=n+hra+da;
+    
+    }
+    else
+    {
+        hra=5000;
+        da=(n*98)/100;
+        g=hra+da+n;
+    
+    }
+    printf("%.2lf",g);
+    return 0;
+}
